@@ -46,7 +46,7 @@ jobs:
           
           
       - name: Echo something
-        run: echo 'hello world'        
+        run: echo 'API_KEY=$haPublishableKey'        
         
         
 
