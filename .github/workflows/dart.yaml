@@ -35,16 +35,7 @@ jobs:
 
 
         
-      - name: Run refresh_packages to Install dependencies
-        run: |
-          chmod +x ./scripts/refresh_packages.bash
-          ./scripts/refresh_packages.bash 
 
-
-      - name: Run build_runner to generate fromJson and toJson
-        run: |
-          chmod +x ./scripts/build_runner.bash
-          ./scripts/build_runner.bash
           
           
           
