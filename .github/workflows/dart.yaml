@@ -10,7 +10,7 @@ name: Dart
 on:
   push:
     branches:
-      - integrate_api
+      - master
 #  pull_request:
 #    branches: [ "master" ]
 
