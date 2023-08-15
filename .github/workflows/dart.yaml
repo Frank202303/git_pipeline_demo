@@ -32,7 +32,13 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.7.1'  #  set your own flutter-version
+ 
 
+        
+      - name: Run refresh_packages to Install dependencies
+        run: |
+          chmod +x ./scripts/refresh_packages.bash
+          ./scripts/refresh_packages.bash 
 
         
 
