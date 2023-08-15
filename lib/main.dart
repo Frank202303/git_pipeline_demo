@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import '.env';
 
 void main() {
+  // 复现.env，然后按照chatGPT说的，设置环境变量
+  print(haPublishableKey.toString());
   runApp(const MyApp());
 }
 
