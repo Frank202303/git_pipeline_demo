@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import '.env';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 
 void main() {
   // 复现.env，然后按照chatGPT说的，设置环境变量
+  String haPublishableKey = dotenv.env['HAPUBLISHABLEKEY'] ?? '';
   print(haPublishableKey.toString());
   runApp(const MyApp());
 }
