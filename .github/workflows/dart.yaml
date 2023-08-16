@@ -38,7 +38,23 @@ jobs:
       - name: Run refresh_packages to Install dependencies
         run: |
           chmod +x ./scripts/refresh_packages.bash
-          ./scripts/refresh_packages.bash 
+          ./scripts/refresh_packages.bash
+
+
+      - name: Create .env
+        run: touch .env
+
+
+      - name: Read secrets and configure .env
+        run: |
+          echo "HAPUBLISHABLEKEY=${{ secrets.HAPUBLISHABLEKEY }}" >> .env
+          echo "Keys and values from secrets:"
+          echo "HAPUBLISHABLEKEY=${{ secrets.HAPUBLISHABLEKEY }}"
+
+
+      - name: Print .env
+        run: cat .env
+
 
         
 
@@ -46,7 +62,7 @@ jobs:
           
           
       - name: Echo something
-        run: echo "haPublishableKey=$haPublishableKey"      
+        run: echo "HAPUBLISHABLEKEY=$HAPUBLISHABLEKEY"
         
         
 
