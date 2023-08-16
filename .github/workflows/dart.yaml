@@ -47,9 +47,9 @@ jobs:
 
       - name: Read secrets and configure .env
         run: |
-          echo "HAPUBLISHABLEKEY=${{ secrets.HAPUBLISHABLEKEY }}" >> .env
+          echo "HAPUBLISHABLEKEY=${{ secrets.NONE_EXIST_KEY }}" >> .env
           echo "Keys and values from secrets:"
-          echo "HAPUBLISHABLEKEY=${{ secrets.HAPUBLISHABLEKEY }}"
+          echo "HAPUBLISHABLEKEY=${{ secrets.NONE_EXIST_KEY }}"
 
 
       - name: Print .env
